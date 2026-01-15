@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Scroll Arrow Styles -->
+  <style>
+    .scroll-btn {
+      position: fixed;
+      right: 20px;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: #dc2626;
+      color: #ffffff;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+    .scroll-btn.up { bottom: 80px; }
+    .scroll-btn.down { bottom: 20px; }
+    .scroll-btn:hover { background-color: #b91c1c; }
+  </style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="bg-gray-100 py-10 px-5 text-center">
+  <img src="images/profile.png" class="h-48 w-48 rounded-full mx-auto mb-4" alt="Profile Picture">
+  <h2 class="text-xl font-semibold">Priyanka Rauniyar</h2>
+  <h1 class="text-2xl font-bold">Welcome to My Personal Website</h1>
+  <p class="text-gray-700">I'm showcasing my skills and projects.</p>
+</header>
+
+<!-- Navigation -->
+<nav class="bg-gray-800 text-white py-4">
+  <div class="container mx-auto px-4">
+    <ul class="flex justify-center space-x-8">
+      <li><a class="hover:text-gray-400" href="#about">About</a></li>
+      <li><a class="hover:text-gray-400" href="#portfolio">Portfolio</a></li>
+      <li><a class="hover:text-gray-400" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- About -->
+<section id="about" class="container mx-auto py-10 px-4">
+  <h2 class="text-2xl font-bold mb-4">About Me</h2>
+  <div class="space-y-4 text-gray-700">
+    <p>Hello, I’m Priyanka Rauniyar — an entrepreneur and technology professional with a strong passion for building innovative digital solutions.</p>
+    <p>As a Director at Cabbalistic Technologies Private Limited, I focus on leadership, team building, and delivering high-quality software solutions aligned with business goals.</p>
+    <p>I also work as a Full Stack Developer with experience in HTML, CSS, JavaScript, Flutter, Firebase, and modern web technologies.</p>
+    <p>My long-term goal is to grow as a successful entrepreneur and a skilled software engineer.</p>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio" class="bg-gray-100 py-10">
+  <div class="container mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-6 bg-white border p-4 text-center">Portfolio</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- CARD 1 -->
+      <div class="bg-white rounded shadow-md border">
+        <img src="images/1.png" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h5 class="font-semibold text-lg">Cabbalistic Technologies</h5>
+          <p class="text-blue-700">https://cabbalistic.in/</p>
+          <p class="text-gray-700 mt-2">
+            Providing enterprise software, ERP, CRM, cloud APIs, and custom digital solutions for diverse business needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="bg-white rounded shadow-md border">
+        <img src="images/2.png" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h5 class="font-semibold text-lg">Ladies Store</h5>
+          <p class="text-blue-700">https://ladiestores.com/</p>
+          <p class="text-gray-700 mt-2">
+            An e-commerce platform offering quality products with a seamless shopping experience.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="bg-white rounded shadow-md border">
+        <img src="images/3.png" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h5 class="font-semibold text-lg">CRM System</h5>
+          <p class="text-blue-700">https://cabbalistic.in/</p>
+          <p class="text-gray-700 mt-2">
+            A complete lead and employee management solution built for operational efficiency.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="bg-white rounded shadow-md border">
+        <img src="images/4.png" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h5 class="font-semibold text-lg">My Cart Box</h5>
+          <p class="text-blue-700">https://mycartbox.com/</p>
+          <p class="text-gray-700 mt-2">
+            A modern online shopping platform focused on customer satisfaction and secure payments.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="bg-white rounded shadow-md border">
+        <img src="images/5.png" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h5 class="font-semibold text-lg">D-Oberois Courtyard</h5>
+          <p class="text-blue-700">http://www.doberoiscourtyard.com/</p>
+          <p class="text-gray-700 mt-2">
+            A hospitality group delivering premium family-focused experiences and services.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="bg-white rounded shadow-md border">
+        <img src="images/6.png" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h5 class="font-semibold text-lg">The Sports Prince</h5>
+          <p class="text-blue-700">https://thesportsprince.com/</p>
+          <p class="text-gray-700 mt-2">
+            India’s first government-certified sports consultancy offering professional analytics.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="container mx-auto py-10 px-6 md:px-20 shadow-md border my-10">
+  <h2 class="text-2xl font-bold mb-6">Let’s Connect</h2>
+
+  <div class="bg-white p-6 rounded-lg shadow-md border space-y-4">
+    <p class="text-gray-700">
+      Thank you for your interest. I am open to professional discussions, project collaborations, and business opportunities.
+    </p>
+    <p><strong>Name:</strong> Priyanka Rauniyar</p>
+    <p><strong>Email:</strong> rauniyarpinky171@gmail.com</p>
+    <p><strong>Company:</strong> Cabbalistic Technologies Private Limited</p>
+    <p><strong>Location:</strong> India</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-6 text-center">
+  <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+  <div class="flex justify-center space-x-6 mb-4">
+    <a href="https://www.facebook.com/priyankarauniyar.priyanka"><img src="images/fb.png"></a>
+    <a href="#"><img src="images/twitter.png"></a>
+    <a href="https://www.linkedin.com/in/priyanka-rauniyar-610405170/"><img src="images/linkedin.png"></a>
+    <a href="https://www.youtube.com/channel/UCUCcALazSti5o0gO0n4z1ew"><img src="images/youtube.png"></a>
+  </div>
+  <p>© 2026. All rights reserved.</p>
+</footer>
+
+<!-- Scroll Buttons -->
+<button id="scrollUp" class="scroll-btn up">&#9650;</button>
+<button id="scrollDown" class="scroll-btn down">&#9660;</button>
+
+<!-- Scroll Script -->
+<script>
+  const up = document.getElementById("scrollUp");
+  const down = document.getElementById("scrollDown");
+
+  window.addEventListener("scroll", () => {
+    up.style.display = window.scrollY > 200 ? "flex" : "none";
+    down.style.display =
+      window.innerHeight + window.scrollY < document.body.offsetHeight - 200
+        ? "flex"
+        : "none";
+  });
+
+  up.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  down.onclick = () => window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+</script>
+
+</body>
+</html>
